@@ -1,0 +1,39 @@
+<l-loadmore
+  show
+  end-text="-- 萌新作品 --"
+  type="{{loadingType}}"
+>
+  <view slot="content">
+    <image class="top-theme" src="{{themeA.entrance_img}}" />
+
+    <swiper class="swiper" indicator-dots autoplay indicator-active-color="#157658" circular>
+      <block wx:for="{{bannerB.items}}" wx:key="{{index}}">
+        <swiper-item>
+          <image class="swiper" src="{{item.img}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <s-category-grid grid="{{gridC}}" />
+
+    <image class="activity" src="{{activityD.entrance_img}}" />
+
+    <s-spu-scroll
+      l-class="spu-scroll"
+      wx:if="themeE.online"
+      theme="{{themeE}}"
+      spu-list="{{themeESpu}}"
+    />
+
+    <image class="quality" src="{{themeF.entrance_img}}" />
+      
+    <s-hot-list banner="{{bannerG}}" />
+
+    <image class="fashion" src="{{themeH.entrance_img}}" />
+
+    <view class="spu-bottom">
+      <image class="title-spu-bottom" src="/imgs/home/title@interest.png" />
+      <l-water-flow generic:l-water-flow-item="s-spu-preview"></l-water-flow>
+    </view>
+  </view>
+</l-loadmore>

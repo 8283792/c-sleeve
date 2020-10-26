@@ -1,0 +1,44 @@
+/* pages/hone/home.wxss */
+.top-theme {
+  display: flex;
+  width: 100%;
+  height: 260rpx;
+}
+.swiper {
+  width: 100%;
+  height: 360rpx;
+}
+.activity {
+  display: flex;
+  width: 100%;
+  height: 310rpx;
+  margin-top: 20rpx;
+}
+.spu-scroll {
+  margin-top: 20rpx;
+}
+.quality {
+  margin: 20rpx 0;
+  width: 100%;
+  height: 880rpx;
+  display: flex;
+}
+.fashion {
+  display: flex;
+  width: 100%;
+  height: 840rpx;
+  margin-top: 20rpx;
+}
+.spu-bottom {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30rpx;
+  background: #ffffff;
+}
+.title-spu-bottom {
+  width: 690rpx;
+  height: 70rpx;
+  margin: 34rpx 0 38rpx 0;
+}

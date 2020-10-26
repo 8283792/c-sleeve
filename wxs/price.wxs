@@ -1,0 +1,19 @@
+// 主价格
+function mainPrice(price, discountPrice){
+  return !discountPrice ? price : discountPrice
+}
+
+// 划线价格
+function slashedPrice(price, discountPrice){
+  return discountPrice ? price : ''
+}
+
+function display(price, discountPrice) {
+  return mainPrice(price, discountPrice) < slashedPrice(price, discountPrice)
+}
+
+module.exports = {
+  mainPrice: mainPrice,
+  slashedPrice: slashedPrice,
+  display: display
+}

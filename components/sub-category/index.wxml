@@ -1,0 +1,13 @@
+<view class="container">
+  <image class="banner" wx:if="{{bannerImg}}" src="{{bannerImg}}"></image>
+  <text class="title">- 全部分类 -</text>
+
+  <l-grid l-class="inner-container">
+    <block wx:for="{{categories}}" wx:key="{{index}}">
+      <l-grid-item class="grid-item" key="{{item.id}}" slot="{{item.id}}" bind:linitemtap="onTapGridItem">
+        <image class="img" src="{{item.img}}" mode="aspectFit"></image>
+        <text>{{item.name}}</text>
+      </l-grid-item>
+    </block>
+  </l-grid>
+</view>
